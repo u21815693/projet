@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
+use Illuminate\Support\Facades\DB;
+
 class FormationSeeder extends Seeder
 {
     /**
@@ -13,6 +15,12 @@ class FormationSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('formations')->insert([
+            'intitule' => 'laravel'
+        ]);
+
+        DB::table('formations')->insert([
+            'intitule' => 'javascript'
+        ]);
     }
 }

@@ -113,11 +113,11 @@
                                             @method('DELETE')
                                             <button type="submit" class="btn btn-warning">Refus</button>
                                         @else
-                                        <a class="btn btn-primary" href="{{ route('user.edit',$user->id) }}">Edit</a>
+                                        <a class="btn btn-primary" href="{{ route('user.edit',$user->id) }}">Modifier</a>
                                             @csrf
                                             @method('DELETE')
 
-                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                            <button type="submit" class="btn btn-danger">Supprimer</button>
                                         @endif
                                     @endif
                                 </form>

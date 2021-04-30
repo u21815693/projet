@@ -35,12 +35,12 @@
 
                               {{--  <a class="btn btn-info" href="{{ route('formation.show',$formation->id) }}">Show</a>--}}
 
-                                <a class="btn btn-primary" href="{{ route('formation.edit',$formation->id) }}">Edit</a>
+                                <a class="btn btn-primary" href="{{ route('formation.edit',$formation->id) }}">Modifier</a>
 
                                 @csrf
                                 @method('DELETE')
 
-                                <button type="submit" class="btn btn-danger">Delete</button>
+                                <button type="submit" class="btn btn-danger">Supprimer</button>
                             </form>
                         </td>
                     </tr>

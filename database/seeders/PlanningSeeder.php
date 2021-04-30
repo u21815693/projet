@@ -13,6 +13,6 @@ class PlanningSeeder extends Seeder
      */
     public function run()
     {
-        //
+        
     }
 }

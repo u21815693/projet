@@ -76,12 +76,12 @@
 
                               {{--  <a class="btn btn-info" href="{{ route('cour.show',$cour->id) }}">Show</a>--}}
 
-                                <a class="btn btn-primary" href="{{ route('cour.edit',$cour->id) }}">Edit</a>
+                                <a class="btn btn-primary" href="{{ route('cour.edit',$cour->id) }}">Modifier</a>
 
                                 @csrf
                                 @method('DELETE')
 
-                                <button type="submit" class="btn btn-danger">Delete</button>
+                                <button type="submit" class="btn btn-danger">Supprimer</button>
                             </form>
                         </td>
                     </tr>
