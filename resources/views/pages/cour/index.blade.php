@@ -70,7 +70,11 @@
                     <tr>
                         <td>{{ ++$i }}</td>
                         <td>{{ $cour->intitule }}</td>
+                        @if(isset($cour->user))
                         <td>{{ $cour->user['nom'] }}</td>
+                        @else
+                        <td>Modifier le cour pour assigner un enseignant</td>
+                        @endif
                         <td>
                             <form action="{{ route('cour.destroy',$cour->id) }}" method="POST">
 
