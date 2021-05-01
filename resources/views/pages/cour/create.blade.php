@@ -50,6 +50,20 @@
                     </select>
                 </div>
                 <div class="row">
+                    <select required placeholder="Formation" id="formation" type="text"
+                            class="form-control @error('formation_id') is-invalid @enderror"
+                            name="formation_id" value="{{ old('formation_id') }}" required autocomplete="formation_id">
+                            <option value="">
+                                Sélèctionnez la formation
+                            </option>
+                            @foreach (\App\Models\Formation::orderBy('created_at')->get() as $formation)
+                                <option value="{{ $formation->id }}">
+                                    {{ $formation->intitule }}
+                                </option>
+                            @endforeach
+                    </select>
+                </div>
+                <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 text-center">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>

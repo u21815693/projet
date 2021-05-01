@@ -110,6 +110,7 @@ class CourController extends Controller
         $cour = new Cour;
         $cour->intitule = $request->input('intitule');
         $cour->user_id = $request->input('user_id');
+        $cour->formation_id = $request->input('formation_id');
         $cour->save();
         return redirect('/cour');
     }
